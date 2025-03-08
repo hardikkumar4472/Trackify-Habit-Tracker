@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackify: About us</title>
+    <link rel="stylesheet" href="aboutUS.css">
+    <script src="https://kit.fontawesome.com/6c820a33bb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="Trackify logo No background.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Satoshi:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+    <div id="about" class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="About us.png" alt="" class="w-full">
+                    <div class="flex justify-center mt-4">
+                        <a href="index.html" class="inline-block bg-blue-700 text-white font-bold py-2 px-4 rounded-3xl hover:bg-gray-200 hover:text-blue-600 transition duration-300 my-10">Back to Home</a>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>A gamified habit tracker turns daily routines into an engaging experience by incorporating rewards, challenges, and progress tracking. Users earn points, badges, or levels as they complete habits, making consistency more fun and motivating. Features like streaks, leaderboards, and virtual rewards keep users accountable and encourage long-term habit formation. Personalization options, such as avatars or themes, enhance user engagement. By making self-improvement feel like a game, a gamified habit tracker helps build positive routines effortlessly.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('team')">Team</p>
+                        <p class="tab-links" onclick="opentab('Skillset')">Skillset</p>
+                        <p class="tab-links" onclick="opentab('vision')">Vision</p>
+                        <p class="tab-links" onclick="opentab('Mission')">Mission</p>
+                        <p class="tab-links" onclick="opentab('why')">Why Trackify</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="team">
+                        <ol type="1">
+                            <li>1. Hardik Kumar -<span>12301328</span></li>
+                            <li>2. Raman Negi -<span>12315380</span></li>
+                            <li>3. Tushar Upadhyay -<span>12307313</span> </li>
+                            <li>4. Diya Maji -<span>12319218</span> </li>
+                        </ol>                  
+                    </div>
+                    <div class="tab-contents" id="Skillset">
+                        <ul>
+                            <li>Frontend- HTML, CSS, JavaScript, Tailwind CSS, JQuery, Bootstrap</li>
+                            <li>Backend- PHP</li>
+                            <li>Database</li>
+                        </ul>                  
+                    </div>
+                    <div class="tab-contents" id="vision">
+                        <p>A fun, interactive platform that helps users build and maintain positive habits through gamification, rewarding progress with points, challenges, and personalized avatars.</p>                
+                    </div>
+                    <div class="tab-contents" id="Mission">
+                        <p>To empower users to build lasting positive habits by providing an engaging, rewarding, and motivating gamified experience.</p>                
+                    </div>
+                    <div class="tab-contents" id="why">
+                        <p>The habit tracker website was created to address the common challenge of staying consistent with personal goals. Many people struggle to form lasting habits due to lack of motivation and accountability. By gamifying the process, the website turns habit building into a fun, rewarding journey. It offers users personalized tools, rewards, and challenges to keep them engaged and motivated. The goal is to help individuals create sustainable habits that improve their lives, one small step at a time.</p>                
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

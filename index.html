@@ -1,0 +1,262 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Trackify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Satoshi:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Trackify logo No background.png" type="image/x-icon">
+</head>
+<body class="bg-blue-50" id="home">
+<header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <img alt="Traceify logo" class="w-15 h-10 rounded-full border-2 border-blue-600" height="20" width="40" src="Trackify logo No background.png" width="40"/>
+            <span class="text-2xl font-extrabold text-blue-600 tracking-wide font-abril-fatface">Trackify</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+            <a class="text-gray-700 hover:text-blue-600 transition duration-2000" href="#home">Home</a>
+            <a class="text-gray-700 hover:text-blue-600 transition duration-2000" href="AboutUS.html">About Us</a>
+            <a class="text-gray-700 hover:text-blue-600 transition duration-2000" href="#home">How to use</a>
+        </nav>
+        <div class="space-x-4 flex items-center">
+            <button class="px-4 py-2 text-blue-600 border border-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition duration-2000">Login</button>
+            <button class="px-4 py-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 transition duration-2000">Sign up</button>
+            <button id="mobile-menu-button" class="md:hidden px-4 py-2 text-gray-700 hover:text-blue-600 transition duration-2000">
+                <i class="fas fa-bars"></i>
+            </button>
+<!--             <button class="px-4 py-2 text-gray-700 bg-gray-200 rounded-full hover:bg-gray-300 transition duration-2000" id="dark-mode-toggle" onclick="toggleDarkMode()">
+                <i class="fas fa-moon"></i>
+            </button> -->
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Sidebar -->
+<div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden">
+    <div class="flex justify-end p-4">
+        <button id="close-mobile-menu" class="text-white">
+            <i class="fas fa-times fa-2x"></i>
+        </button>
+    </div>
+    <nav class="flex flex-col items-center">
+        <a class="text-white text-lg py-2" href="https://www.w3schools.com/html/">Home</a>
+        <a class="text-white text-lg py-2" href="AboutUS.html">About Us</a>
+        <a class="text-white text-lg py-2" href="#home">How to use</a>
+    </nav>
+</div>
+
+<main class="container mx-auto px-4 py-12">
+    <section class="flex flex-col md:flex-row items-center text-center md:text-left">
+        <div class="md:w-1/2">
+            <div class="flex justify-center md:justify-start items-center space-x-4 mb-6">
+                <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full font-abril-fatface">Habits Matter</span>
+                <img alt="icon" class="w-5 h-5" height="20" src="https://storage.googleapis.com/a1aa/image/MtZt7udbsyPdZhcn_L_pHxybMXoFFlb4ODfZ5whjBFk.jpg" width="20"/>
+            </div>
+            <h1 class="text-4xl font-bold text-black mb-4 font-abril-fatface">Build Better Habits, Build a Better Life</h1>
+            <p class="text-gray-600 mb-6">Good habits are the foundation of success—small daily actions that lead to extraordinary results.</p>
+            <div class="flex justify-center md:justify-start items-center space-x-2">
+                <input class="px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none" placeholder="Search your product" type="text"/>
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-r-full hover:bg-blue-700 transition duration-2000">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+            <img alt="Illustration of a person meditating with a clock and a book" id="habitimgg" class="w-3/4 md:w-full" height="300" src="Habit images.png" width="300"/>
+        </div>
+    </section>
+    <section class="mt-16">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 font-abril-fatface">Features We Provide</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="features bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-blue-50 duration-2000">
+                <img alt="BMI icon" class="mx-auto mb-4" height="60" src="Habit list.png" width="60"/>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Customizable Habit Lists</h3>
+                <p class="text-gray-600">Users can create and manage their own habits.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-blue-50 duration-2000">
+                <img alt="Food Recommendation icon" class="mx-auto mb-4" height="60" src="Streak.png" width="60"/>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Daily/Weekly Streaks</h3>
+                <p class="text-gray-600">Encourages consistency with streak-based rewards.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-blue-50 duration-2000">
+                <img alt="Nutritional Value icon" class="mx-auto mb-4" height="60" src="Progress vis.png" width="60"/>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Progress Visualization</h3>
+                <p class="text-gray-600">Charts, graphs, or a calendar to track progress.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-blue-50 duration-2000">
+                <img alt="Interactive Chatbot icon" class="mx-auto mb-4" height="60" src="notification.png" width="60"/>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Reminders & Notifications</h3>
+                <p class="text-gray-600"> Timely alerts to keep users accountable.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-blue-50 duration-2000">
+                <img alt="Interactive Chatbot icon" class="mx-auto mb-4" height="60" src="AI.png" width="60"/>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">AI-Powered Coaching</h3>
+                <p class="text-gray-600">Smart suggestions and habit improvement tips.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-blue-50 duration-2000">
+                <img alt="Interactive Chatbot icon" class="mx-auto mb-4" height="60" src="loot boxes.png" width="60"/>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Random Rewards (Loot Boxes)</h3>
+                <p class="text-gray-600"> Surprise bonuses for streaks or achievements.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-blue-50 duration-2000">
+                <img alt="Interactive Chatbot icon" class="mx-auto mb-4" height="60" src="challenges.png" width="60"/>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Challenges & Quests</h3>
+                <p class="text-gray-600"> Set personal or group challenges to increase motivation.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-blue-50 duration-2000">
+                <img alt="Interactive Chatbot icon" class="mx-auto mb-4" height="60" src="XP.png" width="60"/>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">XP & Levels </h3>
+                <p class="text-gray-600"> Completing habits earns experience points (XP) and levels up the user.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-blue-50 duration-2000">
+                <img alt="Interactive Chatbot icon" class="mx-auto mb-4" height="60" src="Badge.png" width="60"/>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Achievements & Badges </h3>
+                <p class="text-gray-600"> Unlockable rewards for milestones</p>
+            </div>
+        </div>
+    </section>
+    <section class="mt-16">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 font-abril-fatface">Help Topics</h2>
+        <h3 class="text-xl font-semibold text-gray-800 mb-4 font-abril-fatface">Enhance Your Lifestyle</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="Wake.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Wake Up Early</h4>
+                <p class="text-gray-600">Start your day with a fresh mind and extra time for productivity.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="Exercise.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Exercise Daily</h4>
+                <p class="text-gray-600">Keep your body and mind healthy with regular physical activity.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="read.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Read Regularly</h4>
+                <p class="text-gray-600">Expand your knowledge and improve focus by reading daily.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="practice.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Practice Gratitude</h4>
+                <p class="text-gray-600">Cultivate positivity by acknowledging what you're thankful for.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="daily goals.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Set Daily Goals</h4>
+                <p class="text-gray-600">Stay organized and motivated by planning your tasks.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="Limit screen time.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Limit Screen Time</h4>
+                <p class="text-gray-600">Reduce distractions and improve mental well-being.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="Eat healthy.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Eat Healthy</h4>
+                <p class="text-gray-600">Fuel your body with nutritious food for sustained energy.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="stay hydrated.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Stay Hydrated</h4>
+                <p class="text-gray-600">Drink enough water to maintain optimal health.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="sleep well.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Sleep Well</h4>
+                <p class="text-gray-600">Prioritize quality rest for better performance and mood.</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 hover:bg-blue-50 duration-2000">
+                <img alt="Product image" class="w-full h-40 object-cover rounded-t-lg mb-4" height="200" src="keep learning.png" width="300"/>
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Keep Learning</h4>
+                <p class="text-gray-600">Continuously acquire new skills to grow personally and professionally.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-white py-8 mt-16">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <img alt="HealthyMo logo" class="w-10 h-10" height="40" src="Trackify logo No background.png" width="40"/>
+                <span class="text-xl font-bold text-blue-600">Trackify</span>
+            </div>
+            <div class="flex space-x-8 mb-4 md:mb-0">
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Product</h4>
+                    <ul class="space-y-1">
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Overview</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Features</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Solutions</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Company</h4>
+                    <ul class="space-y-1">
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Press</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">News</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Support</h4>
+                    <ul class="space-y-1">
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-blue-600" href="#">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center md:text-left">
+                <h4 class="text-lg font-semibold text-gray-800 mb-2">Contact us</h4>
+                <p class="text-gray-600">1234567890</p>
+                <p class="text-gray-600">trackify@gmail.com</p>
+                <div class="flex space-x-4 mt-4">
+                    <a class="text-gray-600 hover:text-blue-600" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-gray-600 hover:text-blue-600" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-gray-600 hover:text-blue-600" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-gray-600 hover:text-blue-600" href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
